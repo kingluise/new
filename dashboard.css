@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121b22;
+  color: white;
+}
+
+.chat-header {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 20px;
+  background-color: #1f2c34;
+  border-bottom: 1px solid #222;
+}
+
+.chat-list {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.chat-item {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  border-bottom: 1px solid #1f2c34;
+  cursor: pointer;
+  text-decoration: none; /* Remove default link underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.chat-item:hover {
+  background-color: #1e2b32;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.chat-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.time {
+  font-size: 12px;
+  color: gray;
+}
+
+.green {
+  color: #25d366;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.last-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  background-color: #25d366;
+  color: black;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-left: 8px;
+}
